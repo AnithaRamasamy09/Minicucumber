@@ -1,0 +1,11 @@
+stepDefinitions\Hooks.class
+org\mini\pom\Pom_Adactin_BookHotel.class
+org\mini\pom\Pom_Task_Adactin.class
+stepDefinitions\Base.class
+org\mini\pom\Pom_Adactin_Login.class
+org\mini\pom\Pom_Adactin_Confirm_Hotel.class
+org\mini\pom\Pom_Adactin_SelectHotel.class
+org\mini\pom\Pom_Adactin_SearchHotel.class
+stepDefinitions\Verify_Login_Page.class
+stepDefinitions\parallel.class
+reportConfig\myReport.class
