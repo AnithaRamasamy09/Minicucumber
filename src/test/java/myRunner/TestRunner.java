@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 		//		strict=true,
 		snippets=SnippetType.UNDERSCORE,
 		tags= {"@test"},
-		plugin= {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"
+		plugin= {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html", "json:target/cucumber.json",
 		})//"rerun:target/rerun.txt"
 
 public class TestRunner {

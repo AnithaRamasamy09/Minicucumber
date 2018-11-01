@@ -2,10 +2,8 @@ package stepDefinitions;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -16,7 +14,6 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.util.SystemOutLogger;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -28,15 +25,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class Base {
 
 	protected static WebDriver driver;
 	public static WebDriver getDriver(String url) {
-//		System.setProperty("webdriver.chrome.driver", "C:\\Selenium_Anitha\\MiniCucumberProject\\drivers\\chromedriver.exe");
 		
-		WebDriverManager.chromedriver().setup();
+		String path=System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", path+"/drivers/chromedriver.exe");
+		
+//		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();	
 		driver.get(url);

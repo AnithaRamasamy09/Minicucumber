@@ -1,0 +1,100 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 46944821,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "login with examples",
+        "description": "",
+        "id": "adactin-page-login-verification-with-and-without-examples;login-with-examples;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1621108235,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14213243060,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user launches adactin page",
+            "match": {
+              "location": "Verify_Login_Page.user_launches_adactin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 705148813,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters \"AnithaTest\" and \"8Q1P97\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AnithaTest",
+                  "offset": 13
+                },
+                {
+                  "val": "8Q1P97",
+                  "offset": 30
+                }
+              ],
+              "location": "Verify_Login_Page.user_enters_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1251567507,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks login button",
+            "match": {
+              "location": "Verify_Login_Page.user_clicks_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Adactin page login verification with and without examples",
+    "description": "",
+    "id": "adactin-page-login-verification-with-and-without-examples",
+    "keyword": "Feature",
+    "uri": "FeatureFiles/login.feature"
+  }
+]
