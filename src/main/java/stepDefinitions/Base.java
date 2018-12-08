@@ -28,15 +28,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 
 	protected static WebDriver driver;
 	public static WebDriver getDriver(String url) {
-//		System.setProperty("webdriver.chrome.driver", "C:\\Selenium_Anitha\\MiniCucumberProject\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium_Anitha\\MiniCucumberProject\\drivers\\chromedriver.exe");
 		
-		WebDriverManager.chromedriver().setup();
+//		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();	
 		driver.get(url);
